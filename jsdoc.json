@@ -1,0 +1,15 @@
+{
+    "source": {
+      "include": ["jsdoc.js"],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules|docs)"
+    },
+    "opts": {
+      "destination": "./docs"
+    },
+    "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false
+    }
+  }
+  

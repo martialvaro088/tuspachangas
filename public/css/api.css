@@ -1,0 +1,181 @@
+body {
+    background-color: #252525;
+}
+
+.div_principal_api {
+    padding: 10px;
+    margin-top: 40px;
+    width: 70.7%;
+    margin-left: 13.9%;
+}
+
+.container_fotos_api {
+    width: 100%;
+}
+
+.fotos_api {
+    display: flex;
+}
+
+.foto_api {
+    border-radius: 12px;
+    width: 48%;
+    margin: 1%;
+}
+
+.container_texto_api {
+    margin-top: 2%;
+}
+
+.tarjeta_p {
+    border-radius: 12px;
+    padding: 8px;
+    width: 96%;
+    margin-left: 1%;
+    margin-top: -3%;
+}
+
+.p_api {
+    color: white;
+    width: 80%;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.p_api_2 {
+    color: white;
+    width: 80%;
+    text-align: right;
+    border-radius: 12px;
+    margin-left: 19.7%;
+}
+
+/* Estilos para el fondo difuminado */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1002;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    border: 1px solid #55cca2;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 1002;
+}
+
+/* Animación para mostrar la ventana modal */
+.modal.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.span_modal {
+    color: white;
+    font-size: 20px;
+}
+
+.input_modal {
+    color: white;
+    background-color: #404040;
+    border: 1px solid #55cca2;
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.boton_iniciar {
+    color: white;
+    font-size: 16px;
+    border: 1px solid #55cca2;
+    background-color: #55cca2;
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 3%;
+    width: 36%;
+}
+
+.boton_iniciar button:hover {
+    border: 1px solid #55cca2;
+    background-color: #55cca2;
+
+}
+
+.boton_modal {
+    border: 1px solid #55cca2;
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 12%;
+    width: 36%;
+}
+
+.close-btn {
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(219, 44, 41);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.boton_modal_registrar {
+    border: 1px solid #55cca2;
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0%;
+    width: 36%;
+}
+
+.close-btn_registrar {
+    margin-top: -6.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(223, 5, 3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.close-btn_seleccion {
+    text-decoration: none;
+    margin-top: -2%;
+    margin-left: 16%;
+    background-color: #55cca2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}

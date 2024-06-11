@@ -1,0 +1,347 @@
+body {
+    background-color: #171717;
+}
+
+.img_sidebar {
+    width: 120px;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 200px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado_info {
+    color: white;
+    width: 90%;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.encabezado_resultados_info {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    color: white;
+}
+
+.sub_encabezado_info {
+    width: 90%;
+    background-color: #111;
+    position: fixed;
+    top: 79px;
+    z-index: 1000;
+}
+
+.sub_encabezado_resultados_info {
+    text-align: center;
+    color: white;
+}
+
+.menu_info {
+    display: flex;
+    background-color: #141215;
+    overflow: hidden;
+    position: fixed;
+    top: 138.7px;
+    width: 90%;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menu_info a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu_info a:hover {
+    color: #55cca2;
+    ;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 5%;
+    border: 1px solid #333;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    border: 3px solid #333;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    color: white;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(1),
+tr:nth-child(2) {
+    background-color: rgb(92, 94, 95);
+    color: white;
+}
+
+tr:last-child td {
+    color: white;
+    border-bottom: none;
+}
+
+td:not(.nombre_equipo),
+th {
+    color: white;
+    text-align: center;
+}
+
+.anuncio_izquierda_estadisticas {
+    position: fixed;
+    z-index: 1001;
+    top: 185px;
+    width: 12%;
+    left: 10%;
+    height: 74.8%;
+}
+
+.anuncio_derecha_estadisticas {
+    position: fixed;
+    z-index: 1001;
+    top: 185px;
+    width: 12%;
+    left: 88%;
+    height: 74.8%;
+}
+
+.contenedor_tablas {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.contenedor_tabla_grupos {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.encabezado_estadisticas {
+    display: flex;
+    margin-top: 200px;
+}
+
+.enlace_grupos {
+    height: 20px;
+    margin-left: 14%;
+    margin-top: 1.5%;
+    text-decoration: none;
+    color: white;
+    background-color: #55cca2;
+    border-radius: 12px;
+    padding: 10px;
+    padding-top: 12px;
+}
+
+.h1_estadisticas {
+    margin-left: 12%;
+    color: white;
+}
+
+#tabla_grupos {
+    width: 72%;
+    margin-left: 14%;
+}
+
+.pie_de_pagina {
+    height: fit-content;
+    background-color: #212121;
+    color: #111;
+    padding: 20px;
+}
+
+.container_footer {
+    width: 62%;
+    margin-left: 24%;
+    text-align: center;
+}
+
+.anuncio_footer {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.container_p_footer {
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.p_footer {
+    text-align: justify;
+    color: white;
+}
+
+.fila_redes_footer {
+    color: white;
+}
+
+.red_footer {
+    text-decoration: none;
+    color: white;
+}
+
+.copy {
+    font-size: 10px;
+    color: #aeaeae;
+}
+
+p {
+    padding: 0px;
+}
+
+/* Estilos para el fondo difuminado */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1002;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    border: 1px solid #55cca2;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 1002;
+}
+
+/* Animación para mostrar la ventana modal */
+.modal.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.span_modal {
+    color: white;
+    font-size: 20px;
+}
+
+.input_modal {
+    color: white;
+    background-color: #404040;
+    border: 1px solid #55cca2;
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.boton_iniciar {
+    color: white;
+    font-size: 16px;
+    border: 1px solid #55cca2;
+    background-color: #55cca2;
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 3%;
+    width: 36%;
+}
+
+.boton_iniciar button:hover {
+    border: 1px solid #55cca2;
+    background-color: #55cca2;
+
+}
+
+.boton_modal {
+    border: 1px solid #55cca2;
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 12%;
+    width: 36%;
+}
+
+.close-btn {
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(219, 44, 41);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.boton_modal_registrar {
+    border: 1px solid #55cca2;
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0%;
+    width: 36%;
+}
+
+.close-btn_registrar {
+    margin-top: -6.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(223, 5, 3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.close-btn_seleccion {
+    text-decoration: none;
+    margin-top: -2%;
+    margin-left: 16%;
+    background-color: #55cca2;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
